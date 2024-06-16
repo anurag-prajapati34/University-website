@@ -220,7 +220,7 @@ nav .fa-solid{
   
     background-color: #fff3ff;
     border-radius: 10px;
-    margin-bottom: 5%;
+    margin-bottom: 30px;
   
  
    padding: 20px 10px;
@@ -236,10 +236,107 @@ nav .fa-solid{
 .course-col:hover{
     box-shadow:0 0 20px 0px rgba(0,0,0,0.3);
     transition: 1s ease;
+    
 }
 
 @media(max-width:700px){
     .courses .courses-row{
         flex-direction: column;
+    }
+}
+
+/*---------------Campus-----------------------*/ 
+
+.campus{
+      
+    padding-top: 100px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.campus h1{
+height: var(--main-heading-Height);
+    font-weight:600;
+    text-align: center;
+}
+
+.campus p{
+    font-size: var(--para-size);
+    color: var(--para-color);
+    padding-top: 10px;
+    line-height: 22px;
+    font-weight: 300;
+}
+
+.campus .campuse-row{
+    width: 80%;
+    display: flex;
+   
+    justify-content: space-between;
+    margin-top: 3%;
+ 
+
+}
+.campus-col{
+   flex-basis: 32%;
+background-size: cover;
+background-size: cover;
+   margin-bottom: 30px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+justify-content: center;
+    position: relative;
+    overflow: hidden;
+    transition: 1s;
+
+
+}
+.campus-col img{
+    width: 100%;
+}
+
+
+
+.layer{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+background: transparent;
+
+}
+.layer h3{
+    font-weight: 500;
+    font-size: 26px;
+    position: absolute;
+    bottom: -50%;
+    color:white
+}
+
+.layer:hover{
+    background: rgba(226,0,0,0.7);
+    transition: 0.7s;
+  
+  
+    
+}
+
+.layer:hover h3{
+    transition: 0.7s;
+    bottom: 49%;
+   
+}
+
+
+@media(max-width:700px){
+    .campus .campuse-row{
+    flex-direction: column;
     }
 }
