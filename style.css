@@ -382,6 +382,7 @@ background: transparent;
     flex-direction: column;
     overflow: hidden;
     position: relative;
+    margin-bottom:30px;
   
 
 }
@@ -404,5 +405,134 @@ background: transparent;
     .facilities-row{
         flex-direction: column;
         
+    }
+}
+
+
+/*-------------------------testemonial--------------------*/
+
+.testimonial{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%; ;
+
+}
+
+.testimonial h1{
+    height: var(--main-heading-Height);
+    font-weight: 600;
+}
+
+.testimonial p{
+    font-size: var(--para-size);
+    color:var(--para-color);
+    font-weight: 300;
+
+
+}
+
+.testimonial-row{
+    display: flex;
+    margin-top: 3%;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    margin: 3%;
+}
+
+.testimonial-col{
+    gap: 20px;
+    flex-basis: 45%;
+    display: flex;
+    justify-content: space-between;
+    background: #fff3ff;
+    padding:20px 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+   
+    
+}
+
+.testimonial-col img{
+
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+
+
+}
+.content h3{
+    font-weight: 600;
+    margin:10px 0;
+}
+
+.star{
+    color:orange;
+    font-weight: 600;
+}
+
+.content{
+    gap: 20px;
+}
+
+.testimonial-col:hover{
+    
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.6);
+    transition:1s ease;
+}
+
+@media(max-width:700px){
+    .testimonial-row{
+        flex-direction: column;
+    }
+}
+
+
+/*------------call to action-------------------*/
+
+.cta{
+    width: 80%;
+   text-align: center;
+    margin:100px auto;
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/banner2.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 150px 0;
+    border-radius: 10px;
+
+}
+
+.cta h1{
+    color:white;
+    font-weight: 600;
+    font-size: 4vmin;
+}
+
+.cta a{
+    color:white;
+    text-decoration: none;
+    border: 1px solid white;
+   padding: 12px 34px;
+   font-size: 13px;
+background: transparent;
+display: inline-block;
+margin-top: 10px;
+}
+
+.cta a:hover{
+    background-color: var(--secondary-color);
+    transition: 0.7s ease;
+    border-color: #f44336;
+}
+
+@media(max-width:700px){
+    .cta h1{
+        font-size:20px ;
+        margin:0 5px;
+       
     }
 }
